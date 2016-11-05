@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by anwar1987 (http://jsbin.com/tapahub/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <title>JS Bin</title>
+<style id="jsbin-css">
+#tabla{
+  margin-left:60px;
+  margin-top:30px;
+  height:130px;
+  width:200px;
+  text-align:center;
+  background-color:red;
+  border:6px solid green;
+}
+</style>
+</head>
+<body>
+  <button id="gomb">Kattints ide</button>
+  <div id="tabla"><br>Ha rákattintasz a fenti gombra akkor eltűnik ez a téglalap, és ha megint rákatintasz akkor megjelenik.</div>
+<script id="jsbin-javascript">
+$(function(){
+  
+  $('#gomb').on('click',function(){
+    $('#tabla').slideToggle(1000);
+  });
+  
+});
+</script>
+</body>
+</html>
